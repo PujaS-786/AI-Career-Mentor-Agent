@@ -1,0 +1,85 @@
+﻿# ─────────────────────────────────────────
+# AI Career Mentor Agent — .gitignore
+# ─────────────────────────────────────────
+
+# ── OS ────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ──────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── Frontend (Node / Vite / React) ────────
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/coverage/
+frontend/.vite/
+
+# ── Backend (Python / Flask) ──────────────
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+backend/.env
+backend/.venv/
+backend/venv/
+backend/env/
+backend/instance/
+backend/*.egg-info/
+backend/dist/
+backend/.pytest_cache/
+backend/htmlcov/
+backend/.coverage
+
+# ── Python general ────────────────────────
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ── Secrets / Environment ─────────────────
+.env
+.env.*
+!.env.example
+secrets.json
+*.pem
+*.key
+
+# ── Data ──────────────────────────────────
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ── Logs ──────────────────────────────────
+logs/
+*.log
+
+# ── Testing ───────────────────────────────
+coverage/
+.nyc_output/
+htmlcov/
+.coverage
+pytest_cache/
+
+# ── Misc ──────────────────────────────────
+*.zip
+*.tar.gz
+*.bak
+tmp/
+temp/

@@ -1,0 +1,78 @@
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(108,99,255,0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(0,217,192,0.12) 0%, transparent 60%),
+    var(--clr-bg);
+}
+
+.hero-card {
+  background: var(--clr-bg-card);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 3rem;
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 0 1px rgba(108,99,255,0.08), 0 24px 64px rgba(0,0,0,0.5), 0 0 80px rgba(108,99,255,0.06);
+  backdrop-filter: blur(12px);
+  animation: fadeUp 0.6s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.logo-ring {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--clr-primary), var(--clr-accent));
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 0 32px rgba(108,99,255,0.45);
+}
+
+.logo-text { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.03em; }
+
+.hero-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #fff 30%, var(--clr-primary-lt));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle { font-size: 0.95rem; color: var(--clr-text-muted); line-height: 1.7; margin-bottom: 2rem; }
+
+.status-badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: rgba(0,217,192,0.1);
+  border: 1px solid rgba(0,217,192,0.3);
+  border-radius: var(--radius-full);
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem; font-weight: 500;
+  color: var(--clr-accent); letter-spacing: 0.02em;
+}
+
+.badge-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--clr-accent);
+  box-shadow: 0 0 8px var(--clr-accent);
+  animation: pulse 2s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
