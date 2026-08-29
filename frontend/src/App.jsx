@@ -1,4 +1,5 @@
 import './styles/App.css'
+import BackendStatus from '@/components/common/BackendStatus'
 
 function App() {
   return (
@@ -14,8 +15,11 @@ function App() {
         </p>
         <div className="status-badge">
           <span className="badge-dot" />
-          Frontend Setup Complete
+          Step 4 — React ↔ Flask Integration
         </div>
+
+        {/* BackendStatus: calls GET /api/v1/health and shows the result */}
+        <BackendStatus />
       </div>
     </div>
   )

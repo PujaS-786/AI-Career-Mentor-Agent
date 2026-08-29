@@ -10,7 +10,14 @@ class BaseConfig:
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL", "sqlite:///career_mentor.db")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JSON_SORT_KEYS = False
-    CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "http://localhost:5173").split(",")
+    # Comma-separated list of allowed origins.
+    # Default covers the two most common Vite dev ports (5173 and 5174).
+    # Vite auto-increments the port when 5173 is already in use.
+    # Override via CORS_ORIGINS env var for production (single deployed URL).
+    CORS_ORIGINS = os.environ.get(
+        "CORS_ORIGINS",
+        "http://localhost:5173,http://localhost:5174"
+    ).split(",")
 
 
 class DevelopmentConfig(BaseConfig):

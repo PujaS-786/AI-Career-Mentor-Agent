@@ -1,0 +1,94 @@
+/* BackendStatus.css — Styles for the Step-4 integration test panel */
+
+.backend-status {
+  margin-top: 2rem;
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  text-align: left;
+}
+
+.bs-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-text-muted);
+  margin-bottom: 1rem;
+}
+
+/* Shared row layout */
+.bs-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+/* Loading */
+.bs-loading {
+  color: var(--clr-text-muted);
+  font-size: 0.875rem;
+  align-items: center;
+}
+
+.bs-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--clr-border);
+  border-top-color: var(--clr-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Status icon */
+.bs-icon {
+  font-size: 1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.bs-success .bs-icon { color: var(--clr-accent); }
+.bs-error   .bs-icon { color: #f87171; }
+
+/* Text content */
+.bs-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--clr-text);
+  margin-bottom: 0.25rem;
+}
+
+.bs-message {
+  font-size: 0.8rem;
+  color: var(--clr-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.bs-hint {
+  font-size: 0.78rem;
+  color: #f87171;
+  margin-top: 0.25rem;
+}
+
+/* JSON preview */
+.bs-json {
+  display: block;
+  font-family: 'Courier New', monospace;
+  font-size: 0.72rem;
+  color: var(--clr-text-muted);
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--clr-border);
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  white-space: pre;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
