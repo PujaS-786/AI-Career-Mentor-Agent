@@ -1,5 +1,17 @@
 # Multi-Agent Architecture — AI Career Mentor Agent
 
+## Academic Project Details
+- **Course**: Bachelor of Computer Applications (BCA)
+- **Institution**: Birla Institute of Technology, Mesra (BIT Mesra)
+- **Project Team**:
+  - Riya Rani [BCA/40009/24]
+  - Shambhavi Shrivastava [BCA/40010/24]
+  - Divyanka Singh [BCA/40026/24]
+  - Puja Sharma [BCA/40031/24]
+- **Status**: Completed & Production Ready
+
+---
+
 ## 1. Overview
 
 This document defines the five AI agents used in the system, their individual responsibilities, their inputs and outputs, and how they are coordinated by the Career Mentor Orchestrator.

@@ -1,4 +1,4 @@
-﻿# ─────────────────────────────────────────
+# ─────────────────────────────────────────
 # AI Career Mentor Agent — .gitignore
 # ─────────────────────────────────────────
 
@@ -83,3 +83,18 @@ pytest_cache/
 *.bak
 tmp/
 temp/
+
+# ── Databases ─────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Resumes / Uploads ─────────────────────
+backend/data/resumes/*
+!backend/data/resumes/.gitkeep
+
+# ── Scratch & Tool Temps ──────────────────
+scratch/
+frontend/scratch/
+*.timestamp-*.mjs
+

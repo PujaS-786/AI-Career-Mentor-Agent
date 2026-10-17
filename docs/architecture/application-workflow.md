@@ -1,5 +1,17 @@
 # Application Workflow — AI Career Mentor Agent
 
+## Academic Project Details
+- **Course**: Bachelor of Computer Applications (BCA)
+- **Institution**: Birla Institute of Technology, Mesra (BIT Mesra)
+- **Project Team**:
+  - Riya Rani [BCA/40009/24]
+  - Shambhavi Shrivastava [BCA/40010/24]
+  - Divyanka Singh [BCA/40026/24]
+  - Puja Sharma [BCA/40031/24]
+- **Status**: Completed & Production Ready
+
+---
+
 ## 1. Overview
 
 This document describes the complete end-to-end user journey through the AI Career Mentor Agent, from first visit through to ongoing career development.

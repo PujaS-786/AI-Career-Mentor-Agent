@@ -1,0 +1,43 @@
+{
+  "full_name": "Divyanka Singh",
+  "email": "divyanka.bca24@bitmesra.ac.in",
+  "college": "Birla Institute of Technology, Mesra",
+  "degree": "Bachelor of Computer Applications (BCA)",
+  "graduation_year": 2027,
+  "cgpa": "8.94 / 10",
+  "target_role": "Full-Stack Developer",
+  "target_company": "Google",
+  "technical_skills": [
+    "JavaScript",
+    "React",
+    "Python",
+    "Flask",
+    "HTML5",
+    "CSS3",
+    "SQL",
+    "Git",
+    "REST APIs"
+  ],
+  "soft_skills": [
+    "Problem Solving",
+    "Agile Collaboration",
+    "Technical Writing",
+    "Communication"
+  ],
+  "projects": [
+    {
+      "title": "AI Career Mentor Agent",
+      "description": "Autonomous 5-agent web application for student career roadmapping, ATS resume diagnostics, and real-time voice simulated mock interviews.",
+      "technologies": ["React", "Flask", "SQLAlchemy", "Google Gemini AI", "WebRTC", "ReportLab"]
+    },
+    {
+      "title": "E-Commerce Microservices Portal",
+      "description": "Full-stack responsive web store featuring user authentication, shopping cart state management, and Stripe payments mock.",
+      "technologies": ["React", "Python", "SQLite", "REST APIs"]
+    }
+  ],
+  "certifications": [
+    "International Bootcamp on DSA for DeepTech (AICTE & NASSCOM) hosted by BIT Mesra",
+    "Winner of Fun Zone, Aurora 2026, Birla Institute of Technology, Mesra"
+  ]
+}

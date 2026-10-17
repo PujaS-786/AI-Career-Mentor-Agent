@@ -1,5 +1,17 @@
 # System Architecture — AI Career Mentor Agent
 
+## Academic Project Details
+- **Course**: Bachelor of Computer Applications (BCA)
+- **Institution**: Birla Institute of Technology, Mesra (BIT Mesra)
+- **Project Team**:
+  - Riya Rani [BCA/40009/24]
+  - Shambhavi Shrivastava [BCA/40010/24]
+  - Divyanka Singh [BCA/40026/24]
+  - Puja Sharma [BCA/40031/24]
+- **Status**: Completed & Production Ready
+
+---
+
 ## 1. Overview
 
 The AI Career Mentor Agent is a multi-layer web application that connects a React frontend to a Flask REST API backend, which coordinates a small team of specialized AI agents through a central Orchestrator.
@@ -184,15 +196,16 @@ All external integrations are wrapped in internal utility modules so the system 
 
 ## 4. Technology Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | React 18, Vite 5, JavaScript (ES2023), Vanilla CSS |
-| Backend | Python 3.11+, Flask 3, flask-cors 4, python-dotenv |
-| AI Framework | LangChain (planned) |
-| LLM | OpenAI API or Google Gemini (planned) |
-| Database | SQLite (development), PostgreSQL (production, planned) |
-| File Storage | Local filesystem (development), cloud storage (production, planned) |
-| Testing | Pytest + pytest-flask (backend), Vitest (frontend, planned) |
+| Layer | Technology | Status |
+|---|---|---|
+| Frontend | React 18, Vite 5, JavaScript (ES2023), Custom Glassmorphism CSS | Completed |
+| Backend | Python 3.11/3.12, Flask 3, flask-cors 4, python-dotenv | Completed |
+| AI Framework & LLM | Google Gemini 1.5/2.0 Flash API + Prompt Pipelines | Completed |
+| Database | SQLite 3 + SQLAlchemy ORM with foreign keys | Completed |
+| Document Engine | PyPDF, python-docx, ReportLab (ATS PDF compiler) | Completed |
+| Media & Voice | WebRTC MediaStream, Web Speech API (STT & TTS) | Completed |
+| Authentication | PyJWT, Werkzeug PBKDF2 Password Hashing | Completed |
+| Testing | Pytest 8.x + pytest-flask (13/13 passing tests) | Completed |
 
 ---
 
