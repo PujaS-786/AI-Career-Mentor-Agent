@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Navbar({ activeTab, setActiveTab, user, onOpenAuth, onOpenProfile, onToggleMentor, isMentorOpen, onOpenAbout }) {
+export default function Navbar({ activeTab, setActiveTab, user, onOpenAuth, onOpenProfile, onToggleMentor, isMentorOpen }) {
   return (
     <header className="navbar">
       <div className="nav-brand" onClick={() => setActiveTab('landing')}>
@@ -8,7 +8,7 @@ export default function Navbar({ activeTab, setActiveTab, user, onOpenAuth, onOp
         <div>
           <span>Career Mentor Agent</span>
           <span style={{ fontSize: '0.7rem', display: 'block', color: 'var(--primary-glow)', fontWeight: 400 }}>
-            BIT Mesra · BCA Final Year Project
+            Autonomous 5-Agent Career Mentor System
           </span>
         </div>
       </div>
@@ -44,15 +44,6 @@ export default function Navbar({ activeTab, setActiveTab, user, onOpenAuth, onOp
       </nav>
 
       <div className="nav-user">
-        <button
-          className="btn-secondary"
-          style={{ padding: '0.4rem 0.75rem', fontSize: '0.82rem', borderColor: 'rgba(168, 85, 247, 0.4)' }}
-          onClick={onOpenAbout}
-          title="Birla Institute of Technology, Mesra — BCA Project Credits"
-        >
-          🎓 About Team
-        </button>
-
         <button className="btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }} onClick={onToggleMentor}>
           {isMentorOpen ? 'Close AI Mentor' : '💬 AI Mentor'}
         </button>

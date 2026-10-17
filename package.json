@@ -2,17 +2,10 @@
   "name": "ai-career-mentor-agent",
   "private": true,
   "version": "1.0.0",
-  "description": "AI Career Mentor Agent — Bachelor of Computer Applications (BCA) Project at Birla Institute of Technology, Mesra",
+  "description": "AI Career Mentor Agent — An intelligent, multi-agent AI career mentoring platform",
   "scripts": {
     "dev": "npm --prefix frontend run dev",
     "build": "npm --prefix frontend run build",
     "preview": "npm --prefix frontend run preview"
-  },
-  "contributors": [
-    "Riya Rani [BCA/40009/24]",
-    "Shambhavi Shrivastava [BCA/40010/24]",
-    "Divyanka Singh [BCA/40026/24]",
-    "Puja Sharma [BCA/40031/24]"
-  ],
-  "institution": "Birla Institute of Technology, Mesra"
+  }
 }

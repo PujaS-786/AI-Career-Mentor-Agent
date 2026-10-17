@@ -1,28 +1,13 @@
 import React from 'react';
 
-export default function LandingHeroView({ onStartOnboarding, onOpenAuth, onOpenAbout }) {
+export default function LandingHeroView({ onStartOnboarding, onOpenAuth }) {
   return (
     <div style={{ maxWidth: 1080, margin: '0 auto', padding: '1rem 0' }}>
       {/* HERO BANNER */}
       <div className="hero-banner glass-card" style={{ padding: '3.5rem 2rem', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ display: 'flex', gap: '0.6rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '1rem' }}>
-          <span className="tag tag-success" style={{ padding: '0.4rem 1rem', fontSize: '0.85rem' }}>
-            ⚡ AI-Powered Career Development & Interview Suite
-          </span>
-          <button
-            onClick={onOpenAbout}
-            className="tag tag-info"
-            style={{
-              padding: '0.4rem 1rem',
-              fontSize: '0.85rem',
-              cursor: 'pointer',
-              border: 'none',
-              background: 'rgba(56, 189, 248, 0.2)'
-            }}
-          >
-            🎓 BIT Mesra · BCA Project Team
-          </button>
-        </div>
+        <span className="tag tag-success" style={{ padding: '0.4rem 1rem', fontSize: '0.85rem', marginBottom: '1rem' }}>
+          ⚡ AI-Powered Career Development & Interview Suite
+        </span>
         <h1 className="hero-title" style={{ fontSize: '3rem', fontWeight: 900 }}>
           AI Career Mentor Agent
         </h1>
@@ -30,19 +15,12 @@ export default function LandingHeroView({ onStartOnboarding, onOpenAuth, onOpenA
           Your personal AI career mentor — guiding you from role decision, resume analysis, and skill gap discovery to a personalized roadmap, learning resources, and voice/camera mock interviews.
         </p>
 
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1.5rem', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1.5rem' }}>
           <button className="btn-primary" style={{ padding: '0.8rem 1.8rem', fontSize: '1rem' }} onClick={onStartOnboarding}>
             🚀 Start Career Onboarding Journey
           </button>
           <button className="btn-secondary" style={{ padding: '0.8rem 1.8rem', fontSize: '1rem' }} onClick={onOpenAuth}>
             🔑 Student Sign In / Register
-          </button>
-          <button
-            className="btn-secondary"
-            style={{ padding: '0.8rem 1.8rem', fontSize: '1rem', borderColor: 'var(--primary-glow)' }}
-            onClick={onOpenAbout}
-          >
-            🏛️ Project & Team Credits
           </button>
         </div>
       </div>
@@ -207,74 +185,9 @@ export default function LandingHeroView({ onStartOnboarding, onOpenAuth, onOpenA
         </div>
       </div>
 
-      {/* ACADEMIC PROJECT & TEAM CREDITS SECTION */}
-      <div id="project-credits" className="glass-card" style={{ marginTop: '2rem', border: '1px solid rgba(168, 85, 247, 0.3)', background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(168, 85, 247, 0.08))' }}>
-        <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-          <span className="tag tag-success" style={{ fontSize: '0.8rem', padding: '0.3rem 0.8rem' }}>
-            🎓 Completed Academic Project · Batch 2024 – 2027
-          </span>
-          <h3 style={{ fontSize: '1.6rem', color: '#fff', margin: '0.6rem 0 0.2rem 0' }}>
-            Birla Institute of Technology, Mesra
-          </h3>
-          <p style={{ color: 'var(--primary-glow)', fontSize: '0.92rem', fontWeight: 600 }}>
-            Bachelor of Computer Applications (BCA) · Department of Computer Applications
-          </p>
-        </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
-          {[
-            { name: 'Riya Rani', roll: 'BCA/40009/24', role: 'Core AI Agents & Prompt Engineering' },
-            { name: 'Shambhavi Shrivastava', roll: 'BCA/40010/24', role: 'Backend Services, DB & Auth' },
-            { name: 'Divyanka Singh', roll: 'BCA/40026/24', role: 'Full-Stack, Speech Suite & UI/UX' },
-            { name: 'Puja Sharma', roll: 'BCA/40031/24', role: 'Resume ATS Diagnostics & Testing' }
-          ].map((member, i) => (
-            <div
-              key={i}
-              style={{
-                padding: '1rem',
-                background: 'rgba(10, 13, 20, 0.5)',
-                borderRadius: 10,
-                border: '1px solid var(--border-color)',
-                textAlign: 'center'
-              }}
-            >
-              <strong style={{ color: '#fff', fontSize: '1rem', display: 'block', marginBottom: 4 }}>
-                {member.name}
-              </strong>
-              <span className="tag tag-info" style={{ fontSize: '0.75rem', marginBottom: 6 }}>
-                {member.roll}
-              </span>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.78rem', margin: 0 }}>
-                {member.role}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <div style={{ textAlign: 'center' }}>
-          <button
-            className="btn-secondary"
-            style={{ padding: '0.6rem 1.4rem', fontSize: '0.9rem' }}
-            onClick={onOpenAbout}
-          >
-            📋 View Complete Project Synopsis & Report Summary
-          </button>
-        </div>
-      </div>
-
       {/* HOME PAGE FOOTER */}
       <footer style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--border-color)', textAlign: 'center' }}>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
-          <a
-            href="#project-credits"
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById('project-credits')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            style={{ color: 'var(--primary-glow)', textDecoration: 'none', fontSize: '0.88rem', fontWeight: 600 }}
-          >
-            🎓 Team & Institution
-          </a>
           <a
             href="#how-it-works"
             onClick={(e) => {
@@ -336,17 +249,10 @@ export default function LandingHeroView({ onStartOnboarding, onOpenAuth, onOpenA
             Who Can Use It
           </a>
         </div>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: 4 }}>
-          <strong>Birla Institute of Technology, Mesra</strong> · Bachelor of Computer Applications (BCA)
-        </p>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.78rem' }}>
-          Team: Riya Rani [BCA/40009/24] · Shambhavi Shrivastava [BCA/40010/24] · Divyanka Singh [BCA/40026/24] · Puja Sharma [BCA/40031/24]
-        </p>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem', marginTop: 4 }}>
-          © AI Career Mentor Agent — Completed Academic Project. All rights reserved.
+        <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>
+          © AI Career Mentor Agent — Professional AI Career Development Platform.
         </p>
       </footer>
     </div>
   );
 }
-

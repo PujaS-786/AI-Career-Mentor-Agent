@@ -14,7 +14,6 @@ import RoadmapDashboard from './components/RoadmapDashboard';
 import ProjectsCertificationsView from './components/ProjectsCertificationsView';
 import MockInterviewSuite from './components/MockInterviewSuite';
 import ProgressAnalyticsView from './components/ProgressAnalyticsView';
-import AboutProjectModal from './components/AboutProjectModal';
 
 function App() {
   const [activeTab, setActiveTab] = useState('landing');
@@ -23,7 +22,6 @@ function App() {
   const [authView, setAuthView] = useState('register');
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isMentorOpen, setIsMentorOpen] = useState(false);
-  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [onboardingData, setOnboardingData] = useState(null);
 
   const handleOpenAuth = (view = 'register') => {
@@ -115,7 +113,6 @@ function App() {
         onOpenProfile={() => setIsProfileOpen(true)}
         onToggleMentor={() => setIsMentorOpen(!isMentorOpen)}
         isMentorOpen={isMentorOpen}
-        onOpenAbout={() => setIsAboutOpen(true)}
       />
 
       {/* MAIN VIEW CANVAS */}
@@ -124,7 +121,6 @@ function App() {
           <LandingHeroView
             onStartOnboarding={() => setActiveTab('onboarding')}
             onOpenAuth={handleOpenAuth}
-            onOpenAbout={() => setIsAboutOpen(true)}
           />
         )}
 
@@ -160,12 +156,6 @@ function App() {
           <ProgressAnalyticsView user={user} />
         )}
       </main>
-
-      {/* ABOUT PROJECT MODAL */}
-      <AboutProjectModal
-        isOpen={isAboutOpen}
-        onClose={() => setIsAboutOpen(false)}
-      />
 
       {/* AUTH MODAL */}
       <AuthModal
